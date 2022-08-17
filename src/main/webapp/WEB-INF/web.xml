@@ -8,6 +8,10 @@
         <servlet-name>ReceitaServlet</servlet-name>
         <servlet-class>controller.ReceitaServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>selectInfos</servlet-name>
+        <servlet-class>controller.selectInfos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>receitaServlet</servlet-name>
         <url-pattern>/receitaServlet</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>ReceitaServlet</servlet-name>
         <url-pattern>/ReceitaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>selectInfos</servlet-name>
+        <url-pattern>/selectInfos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
