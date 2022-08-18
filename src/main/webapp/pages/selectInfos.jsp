@@ -2,7 +2,7 @@
 <%@page import="model.Receita"%>
 <%@page import="java.util.ArrayList"%>
 <%
-    ArrayList<Receita> list = (ArrayList<Receita>) request.getAttribute("selectInfos");
+    ArrayList<Receita> list = (ArrayList<Receita>) request.getAttribute("controller/selectInfos");
 %>
 <!DOCTYPE html>
 <html>
@@ -38,13 +38,11 @@
         </nav>
     </header>
     <body>
-        
         <div class="container color-black">
             <div class="card w-100 my-5">
                 <div class="card-body">
                     <h3 class="text-center">Receitas Cadastradas</h3>
                     <div class="card-unico2">
-                    
                         <% for (int i = 0; i < list.size(); i++) {%>
                         <!-- Card individual -->
                         <div class="card card-center m-3" style="width: 18rem;">
@@ -60,19 +58,15 @@
                                 <li class="list-group-item"><h6>Data de Criação:</h6><%=list.get(i).getData()%></li>
                             </ul>
                             <div class="card-body">
-                              
                                 <a href="javascript:confirmaAlteracao(<%=list.get(i).getId()%>)" class="card-link">ALTERAR</a>
                                 <a href="javascript:confirmaExclusao(<%=list.get(i).getId()%>)" class="card-link">EXCLUIR</a>
-                         
                             </div>
                         </div>
                         <%}%>
-                      
                     </div>
                 </div>
             </div>
         </div>
-                       
         <a href="../index.html">VOLTAR</a></p>
     <script src="assets/js/confirmacao.js" type="text/javascript"></script>
 </body>

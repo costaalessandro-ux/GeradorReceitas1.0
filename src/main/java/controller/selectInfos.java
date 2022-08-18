@@ -3,7 +3,6 @@ package controller;
 
 import dao.ReceitaDao;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -26,7 +25,7 @@ public class selectInfos extends HttpServlet {
    
         ReceitaDao dao = new ReceitaDao();
         ArrayList<Receita> list = dao.listar();
-        request.setAttribute("listarInfos", list);
+        request.setAttribute("processRequest", list);
         RequestDispatcher rd = request.getRequestDispatcher("pages/selectInfos.jsp");
         rd.forward(request, response);
 
