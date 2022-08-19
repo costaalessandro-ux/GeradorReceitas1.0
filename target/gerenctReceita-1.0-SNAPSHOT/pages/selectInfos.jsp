@@ -2,7 +2,7 @@
 <%@page import="model.Receita"%>
 <%@page import="java.util.ArrayList"%>
 <%
-    ArrayList<Receita> list = (ArrayList<Receita>) request.getAttribute("controller/selectInfos");
+    ArrayList<Receita> list = (ArrayList<Receita>) request.getAttribute("controller/processRequest");
 %>
 <!DOCTYPE html>
 <html>

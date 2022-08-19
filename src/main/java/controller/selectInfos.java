@@ -18,17 +18,15 @@ public class selectInfos extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ClassNotFoundException, SQLException {
-        response.setContentType("text/html;charset=UTF-8");
-       response.setContentType("text/html;charset=UTF-8");
-       
-         // listar infos
+  
+        // listar infos
    
         ReceitaDao dao = new ReceitaDao();
         ArrayList<Receita> list = dao.listar();
         request.setAttribute("processRequest", list);
         RequestDispatcher rd = request.getRequestDispatcher("pages/selectInfos.jsp");
         rd.forward(request, response);
-
+        
     }
 
     @Override
