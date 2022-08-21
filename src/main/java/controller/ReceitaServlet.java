@@ -52,7 +52,7 @@ public class ReceitaServlet extends HttpServlet {
         request.setAttribute("titulo", receita.getTitulo());
         request.setAttribute("ingredientes", receita.getIngredientes());
         request.setAttribute("modopreparo", receita.getModopreparo());
-        RequestDispatcher rd = request.getRequestDispatcher("formAlter.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("pages/formAlter.jsp");
         rd.forward(request, response);
         } 
         

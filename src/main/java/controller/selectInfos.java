@@ -26,7 +26,8 @@ public class selectInfos extends HttpServlet {
         request.setAttribute("processRequest", list);
         RequestDispatcher rd = request.getRequestDispatcher("pages/selectInfos.jsp");
         rd.forward(request, response);
-        
+       // response.sendRedirect("selectInfos.jsp");
+   
     }
 
     @Override

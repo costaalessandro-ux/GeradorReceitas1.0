@@ -2,7 +2,7 @@
 <%@page import="model.Receita"%>
 <%@page import="java.util.ArrayList"%>
 <%
-    ArrayList<Receita> list = (ArrayList<Receita>) request.getAttribute("controller/processRequest");
+    ArrayList<Receita> list = (ArrayList<Receita>) request.getAttribute("processRequest");
 %>
 <!DOCTYPE html>
 <html>
@@ -27,7 +27,7 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="selectInfos.jsp">Lista de Receita</a>
+                            <a class="nav-link" href="selectInfos">Lista de Receita</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="gerador.html">Criar Receitas</a>
