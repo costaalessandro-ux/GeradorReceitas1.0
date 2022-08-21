@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
               integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/styles/styleSelect.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/style/styleSelect.css" type="text/css"/>
     </head>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,13 +24,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="selectInfos">Lista de Receita</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="gerador.html">Criar Receitas</a>
+                            <a class="nav-link" href="pages/gerador.html">Criar Receitas</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <a href="../index.html">VOLTAR</a></p>
+        <a href="index.html">VOLTAR</a></p>
     <script src="assets/js/confirmacao.js" type="text/javascript"></script>
 </body>
 </html>
